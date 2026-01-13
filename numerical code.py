@@ -8,3 +8,7 @@ np.random.seed(42)
 x = np.linspace(0, 4 * np.pi, 200)
 dx = x[1] - x[0]
 y_clean = np.sin(x) + 0.5* np.cos(2 * x)
+dy_clean = np.cos(x) - np.sin(2 * x)
+noise_level = 0.15
+noise = np.random.normal(0, noise_level, size=len(x))
+y_noisy = y_clean + noise
