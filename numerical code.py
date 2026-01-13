@@ -12,3 +12,8 @@ dy_clean = np.cos(x) - np.sin(2 * x)
 noise_level = 0.15
 noise = np.random.normal(0, noise_level, size=len(x))
 y_noisy = y_clean + noise
+dy_noisy  = np.gradient(y_noisy, dx)
+
+window_length  =31
+poly_order  = 3
+
