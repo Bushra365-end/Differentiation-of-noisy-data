@@ -16,4 +16,10 @@ dy_noisy  = np.gradient(y_noisy, dx)
 
 window_length  =31
 poly_order  = 3
+y_spline = spline(x)
+dy_spline = spline.derivative()(x) 
+
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 10), sharex=True)
+
+
 
