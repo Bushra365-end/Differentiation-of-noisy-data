@@ -27,6 +27,7 @@ fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 10), sharex=True)
 
 
 
+
 ax.plot(x, dy_savgol,  ‘r-‘ , linewidth=2,  label= ‘Savitzky-Golay Daerivative’)
 ax.plot(x, dy_spline,  ‘b:‘ , linewidth=2,  label= ‘Spline Daerivative’)
 
