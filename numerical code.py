@@ -33,7 +33,9 @@ ax1.legend()
 ax1.grid(True, alpha=0.3)
 ax1.set_ylabel("Amplitude")
 
-
+ax2.set_title("Derivative Comparison (Noise Amplification)", fontsize=14)
+ax2.plot(x, dy_clean, 'k--', label='True Derivative', alpha=0.8)
+ax2.plot(x, dy_noisy, 'gray', alpha=0.5, label='Finite Diff on Noisy Data')
 
 
 
