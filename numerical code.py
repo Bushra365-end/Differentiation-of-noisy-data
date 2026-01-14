@@ -24,3 +24,20 @@ fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 10), sharex=True)
 
 
 
+
+
+
+
+
+
+ax2.legend(loc='upper right')
+ax2.grid(True, alpha=0.3)
+ax2.set_xlabel("X")
+ax2.set_ylabel("dy/dx")
+ax2.set_ylim(-4, 4)
+
+plt.tight_layout()
+plt.show()
+
+
+
